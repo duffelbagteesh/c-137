@@ -1,0 +1,17 @@
+{% extends "default.njk" %}
+
+{% block main %}
+<h1>{{character.name}}</h1>
+<div class="info-display">
+  <div>
+    <img src="{{character.image}}" alt="{{character.name}}">
+</div>
+<div>
+<p>{{character.status}}</p>
+<p>{{character.species}}</p>
+<p>{{character.gender}}</p>
+<p>{{character.origin.name}}</p>
+<p>{{character.location.name}}</p>
+</div>
+</div>
+{% endblock %}
